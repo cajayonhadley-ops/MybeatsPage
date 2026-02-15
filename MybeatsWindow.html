@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Now Playing</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    padding: 50px;
+    text-align: center;
+}
+
+.song {
+    display: none;
+}
+
+.song:target {
+    display: block;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #1e3c72;
+    font-size: 32px;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+audio {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.back-btn {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #2a5298;
+    color: white;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background: #1e3c72;
+    transform: translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div id="always" class="song">
+<img src="Mybeats/Images/Always.png" alt="Always">
+<h1>Always</h1>
+<p><strong>Artist:</strong> Daniel Caesar</p>
+<audio controls autoplay>
+<source src="Mybeats/Always.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="snooze" class="song">
+<img src="Mybeats/Images/Snooze.jpg" alt="Snooze">
+<h1>Snooze</h1>
+<p><strong>Artist:</strong> SZA</p>
+<audio controls autoplay>
+<source src="Mybeats/Snooze.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="ivy" class="song">
+<img src="Mybeats/Images/Ivy.png" alt="Ivy">
+<h1>Ivy</h1>
+<p><strong>Artist:</strong> Frank Ocean</p>
+<audio controls autoplay>
+<source src="Mybeats/Ivy.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="godsplan" class="song">
+<img src="Mybeats/Images/God's plan.jfif" alt="God's Plan">
+<h1>God's Plan</h1>
+<p><strong>Artist:</strong> Drake</p>
+<audio controls autoplay>
+<source src="Mybeats/God's Plan.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="humble" class="song">
+<img src="Mybeats/Images/Humble.jfif" alt="HUMBLE.">
+<h1>HUMBLE.</h1>
+<p><strong>Artist:</strong> Kendrick Lamar</p>
+<audio controls autoplay>
+<source src="Mybeats/HUMBLE.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="sunflower" class="song">
+<img src="Mybeats/Images/Sunflower.jfif" alt="Sunflower">
+<h1>Sunflower</h1>
+<p><strong>Artist:</strong> Post Malone & Swae Lee</p>
+<audio controls autoplay>
+<source src="Mybeats/Sunflower.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="youngdumb" class="song">
+<img src="Mybeats/Images/YnD.jpg" alt="Young Dumb & Broke">
+<h1>Young Dumb & Broke</h1>
+<p><strong>Artist:</strong> Khalid</p>
+<audio controls autoplay>
+<source src="Mybeats/Young Dumb & Broke.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="asitwas" class="song">
+<img src="Mybeats/Images/As it was.jfif" alt="As It Was">
+<h1>As It Was</h1>
+<p><strong>Artist:</strong> Harry Styles</p>
+<audio controls autoplay>
+<source src="Mybeats/As It Was.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+<div id="blindinglights" class="song">
+<img src="Mybeats/Images/Blindinglights.png" alt="Blinding Lights">
+<h1>Blinding Lights</h1>
+<p><strong>Artist:</strong> The Weeknd</p>
+<audio controls autoplay>
+<source src="Mybeats/Blinding Lights.mp3" type="audio/mpeg">
+</audio>
+<br>
+<a href="Mybeats.html" class="back-btn" target="Mybeats">← Back to My Beats</a>
+</div>
+
+</div>
+
+</body>
+</html>
